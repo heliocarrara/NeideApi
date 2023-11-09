@@ -33,7 +33,7 @@ jobs:
           poetry --version
 
       - name: Install dependencies
-        run: poetry install
+        run: poetry install --no-root
       
       - name: Run Poetry script
         run: |
